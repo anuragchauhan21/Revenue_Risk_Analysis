@@ -52,7 +52,7 @@ This stage analyzes revenue loss caused by internal operational failures and sel
 - **143 thousand** revenue is directly lost due to order cancellations
 - Only 4 to 5 sellers consistently cause delivery delays
 - Revenue linked to poor seller performance is very small compared to total delayed delivery revenue
-- Top sellers contribute only **12.9 percent** of total revenue
+- Top sellers contribute only **12.9%** of total revenue
 
 Revenue leakage is primarily **operational**, with cancellations being the most concerning loss area.
 
