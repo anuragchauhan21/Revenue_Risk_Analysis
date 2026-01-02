@@ -28,7 +28,7 @@ This stage focuses on understanding how customer purchasing patterns impact reve
 - **94.4% of total revenue** comes from one time buyers
 - Average revenue per repeat customer is **nearly 2 times higher** than one time customers
 
-Clear evidence of **revenue leakage** due to weak customer retention.
+Revenue growth is highly dependent on new customers, while repeat customers remain a very small base despite higher revenue potential.
 
 ### Stage 02 : Experience Driven Leakage
 
@@ -40,7 +40,7 @@ This stage evaluates how delivery delays and poor experience affect customer sat
 - **8.76% of total revenue**, worth **1.35 million** is associated with delayed deliveries
 - Average review score drops from `4.29` for on time deliveries to `2.56` for late deliveries
 
-Poor experience is strongly linked to **revenue at risk**.
+Late delivery directly correlates with customer churn and places a measurable share of revenue at risk.
 
 ### Stage 03 : Operational and Seller Side Leakage
 
@@ -53,7 +53,7 @@ This stage analyzes revenue loss caused by internal operational failures and sel
 - Revenue linked to poor seller performance is very small compared to total delayed delivery revenue
 - Top sellers contribute only **12.9%** of total revenue
 
-Revenue leakage is primarily **operational**, with cancellations being the most concerning loss area.
+Operational failures, especially cancellations, drive revenue loss more than seller concentration or seller driven delays.
 
 ## Recommendations
 
