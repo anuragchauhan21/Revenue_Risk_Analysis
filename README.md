@@ -48,7 +48,7 @@ This stage analyzes revenue loss caused by internal operational failures and sel
 
 **Insights:**
 
-- **143 thousand** revenue is directly lost due to order cancellations
+- **0.14 million** revenue is directly lost due to order cancellations
 - Only **4 sellers** consistently cause delivery delays
 - Revenue linked to poor seller performance is very small compared to total delayed delivery revenue
 - Top sellers contribute only **12.9%** of total revenue
