@@ -2,9 +2,9 @@
 
 ## Problem Statement
 
-The business appears to be growing as new customers continue to place orders and revenue is being generated consistently. However, this growth has started to feel unstable. Even though sales numbers look healthy, there is uncertainty around how much of this revenue is sustainable in the long run.
+The business appears to be growing as new customers continue to place orders and revenue is being generated consistently. However, _this growth has started to feel unstable_. Even though sales numbers look healthy, _there is uncertainty_ around how much of this revenue is sustainable in the long run.
 
-Management believes that revenue may be leaking through everyday issues such as poor customer retention, weak delivery experience, and operational failures. These problems are not obvious at first glance but can quietly slow down long term business growth if ignored.
+Management believes that _revenue may be leaking_ through everyday issues such as poor customer retention, weak delivery experience, and operational failures. These problems are _not obvious at first glance_ but can quietly slow down long term business growth if ignored.
 
 ## Objective
 
@@ -25,10 +25,10 @@ This stage focuses on understanding how customer purchasing patterns impact reve
 **Insights:**
 
 - **97% of customers** are one time buyers
-- **94.4% of total revenue** comes from one time buyers
+- **94.4% of total revenue** worth **14.5M** comes from one time buyers
 - Average revenue per repeat customer is **nearly 2 times higher** than one time customers
 
-Revenue growth is highly dependent on new customers, while repeat customers remain a very small base despite higher revenue potential.
+> Revenue growth is highly dependent on new customers, while repeat customers remain a very small base despite higher revenue potential.
 
 ### Stage 02 : Experience Driven Leakage
 
@@ -40,7 +40,7 @@ This stage evaluates how delivery delays and poor experience affect customer sat
 - **8.76% of total revenue**, worth **1.35 million** is associated with delayed deliveries
 - Average review score drops from `4.29` for on time deliveries to `2.56` for late deliveries
 
-Late delivery directly correlates with customer churn and places a measurable share of revenue at risk.
+> Late delivery directly correlates with customer churn and places a measurable share of revenue at risk.
 
 ### Stage 03 : Operational and Seller Side Leakage
 
@@ -53,7 +53,7 @@ This stage analyzes revenue loss caused by internal operational failures and sel
 - Revenue linked to poor seller performance is very small compared to total delayed delivery revenue
 - Top sellers contribute only **12.9%** of total revenue
 
-Operational failures, especially cancellations, drive revenue loss more than seller concentration or seller driven delays.
+> Operational failures, especially cancellations, drive revenue loss more than seller concentration or seller driven delays.
 
 ## Recommendations
 
