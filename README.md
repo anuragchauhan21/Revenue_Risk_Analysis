@@ -1,10 +1,22 @@
-# Revenue Leakage Analysis for an E-Commerce Business
+# Revenue Leakage Analysis
+**Analyzing where revenue is lost in an e-commerce business by examining customer behavior, delivery performance, and operational processes.**
+
+## Overview
+
+This project investigates potential revenue leakage in an e-commerce business using transaction level data. The goal is to understand whether revenue growth is sustainable or if operational gaps are causing hidden losses.
+
+The analysis focuses on three key areas:
+- Customer purchasing behavior
+- Customer experience and delivery performance
+- Operational and seller related issues
+
+By identifying these leakage points, the project highlights where the business can improve stability and long term revenue growth.
 
 ## Problem Statement
 
 The business is generating consistent revenue and attracting new customers. However, there are concerns about the stability and long-term sustainability of this growth.
 
-Management wants to examine whether revenue is being affected by gaps in customer retention, delivery performance, or operational processes, and assess the overall impact on business growth.
+Management wants to understand whether revenue is being affected by gaps in customer retention, delivery performance, or operational processes, and assess the overall impact on business growth.
 
 ## Objective
 
@@ -12,11 +24,28 @@ The objective of this analysis is to **identify where revenue is leaking** acros
 
 ## Dataset Overview
 
-This analysis uses a public E Commerce dataset that captures end to end order activity.
+This analysis uses a public e-commerce dataset that captures end-to-end order activity.
 
 **Dataset:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
-> The `9 csv` files were structured into a relational SQLite database, enabling multi-table joins and revenue analysis using SQL queries.
+The dataset contains multiple tables representing the full order lifecycle including:
+
+`customers` ▪ `location` ▪ `order_items` ▪ `payments` ▪ `reviews` ▪ `orders` ▪ `product` ▪ `seller` ▪ `product_category`
+
+> The `9 csv` files were structured into a relational **SQLite database**, enabling multi-table joins and revenue analysis using SQL queries.
+
+## Tool and Technologies
+
+`Python` ▪ `SQL` ▪ `SQLite` ▪ `Pandas` ▪ `Matplotlib` ▪ `Seaborn` ▪ `Jupyter Notebook`
+
+## Methods
+
+The analysis follows these steps:
+1. Loaded the raw CSV files into Python.
+2. Created a relational SQLite database to organize the data into structured tables.
+3. Used SQL joins to connect customer, order, payment, review, and seller information.
+4. Computed metrics related to revenue generation, delivery performance, and operational failures.
+5. Visualized selected insights using Python plotting libraries.
 
 ## Analysis and Key Insights
 
@@ -70,6 +99,10 @@ Revenue growth is largely driven by first-time buyers, while a measurable share 
 The analysis shows that revenue stability depends not only on sales volume but on improving retention and operational consistency.
 
 Addressing these gaps can convert unstable revenue into sustainable growth.
+
+## Future Work
+
+- Build an interactive Power BI dashboard to visualize key revenue leakage metrics.
 
 ---
 
