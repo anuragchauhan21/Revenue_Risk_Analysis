@@ -93,7 +93,7 @@ The dashboard summarizes key insights on revenue leakage across customer behavio
 
 ![Dashboard Preview](dashboard/dashboard_preview.png)  
 
-[Click here to view the full multi-page PDF dashboard](dashboard/Revenue_Leakage_Dashboard.pdf)
+[Click here to view the full multi-page PDF dashboard](https://github.com/anuragchauhan21/revenue_leakage_analysis/blob/main/dashboard/Revenue%20Leakage%20Analysis%20Dashboard.pdf)
 
 ## Data-Driven Action Points
 
