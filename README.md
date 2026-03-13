@@ -86,6 +86,14 @@ This stage analyzes revenue loss caused by internal operational failures and sel
 
 > Direct revenue loss from cancellations exceeds revenue concentration risk from seller-driven delays.
 
+## Interactive Dashboard
+ 
+The dashboard summarizes key insights on revenue leakage across customer behavior, delivery performance, and operational processes.
+
+![Dashboard Preview](dashboard/dashboard_preview.png)  
+
+[Click here to view the full multi-page PDF dashboard](dashboard/Revenue_Leakage_Dashboard.pdf)
+
 ## Data-Driven Action Points
 
 - Since 94.4% of revenue comes from customers who purchase only once, the business should track how many customers place a second order and focus on increasing repeat purchases.
@@ -99,10 +107,6 @@ Revenue growth is largely driven by first-time buyers, while a measurable share 
 The analysis shows that revenue stability depends not only on sales volume but on improving retention and operational consistency.
 
 Addressing these gaps can convert unstable revenue into sustainable growth.
-
-## Future Work
-
-- Build an interactive Power BI dashboard to visualize key revenue leakage metrics.
 
 ---
 
