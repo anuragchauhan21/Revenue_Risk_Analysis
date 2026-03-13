@@ -36,7 +36,7 @@ The dataset contains multiple tables representing the full order lifecycle inclu
 
 ## Tool and Technologies
 
-`Python` ▪ `SQL` ▪ `SQLite` ▪ `Pandas` ▪ `Matplotlib` ▪ `Seaborn` ▪ `Jupyter Notebook`
+`Python` ▪ `SQL` ▪ `SQLite` ▪ `Pandas` ▪ `Matplotlib` ▪ `Seaborn` ▪ `Jupyter Notebook` ▪ `Power BI`
 
 ## Methods
 
@@ -46,6 +46,7 @@ The analysis follows these steps:
 3. Used SQL joins to connect customer, order, payment, review, and seller information.
 4. Computed metrics related to revenue generation, delivery performance, and operational failures.
 5. Visualized selected insights using Python plotting libraries.
+6. Compiled the insights into a Power BI Dashboard for easy interpretation and review.
 
 ## Analysis and Key Insights
 
