@@ -41,12 +41,15 @@ The dataset contains multiple tables representing the full order lifecycle inclu
 ## Methods
 
 The analysis follows these steps:
-1. Loaded the raw CSV files into Python.
+1. Loaded the raw `csv` files into Python.
 2. Created a relational SQLite database to organize the data into structured tables.
-3. Used SQL joins to connect customer, order, payment, review, and seller information.
-4. Computed metrics related to revenue generation, delivery performance, and operational failures.
-5. Visualized selected insights using Python plotting libraries.
-6. Compiled the insights into a Power BI Dashboard for easy interpretation and review.
+3. Used `SQL` joins to connect customer, order, payment, review, and seller information.
+4. Validated the database structure by inspecting tables and verifying record counts.
+5. Performed data quality checks including missing value detection, duplicate record validation, and referential integrity verification across related tables.
+6. Validated financial consistency by comparing aggregated order values with recorded payment values to ensure transaction accuracy.
+7. Computed metrics related to revenue generation, delivery performance, and operational failures.
+8. Visualized selected insights using `Python` plotting libraries.
+9. Compiled the insights into a `Power BI` Dashboard for easy interpretation and review.
 
 ## Analysis and Key Insights
 
