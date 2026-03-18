@@ -42,7 +42,7 @@ The dataset contains multiple tables representing the full order lifecycle inclu
 
 The analysis follows these steps:
 1. Loaded the raw `csv` files into Python.
-2. Created a relational SQLite database to organize the data into structured tables.
+2. Created a relational `SQLite database` to organize the data into structured tables.
 3. Used `SQL` joins to connect customer, order, payment, review, and seller information.
 4. Validated the database structure by inspecting tables and verifying record counts.
 5. Performed data quality checks including missing value detection, duplicate record validation, and referential integrity verification across related tables.
