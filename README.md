@@ -1,117 +1,107 @@
-# Revenue Leakage Analysis
-**Analyzing where revenue is lost in an e-commerce business by examining customer behavior, delivery performance, and operational processes.**
+# Revenue Risk Analysis
+
+**Analyzing customer retention, delivery performance, and operational risks impacting revenue stability in an e-commerce business.**
 
 ## Overview
 
-This project investigates potential revenue leakage in an e-commerce business using transaction level data. The goal is to understand whether revenue growth is sustainable or if operational gaps are causing hidden losses.
+This project evaluates factors that put current and future revenue at risk using transaction-level e-commerce data.
 
-The analysis focuses on three key areas:
-- Customer purchasing behavior
-- Customer experience and delivery performance
-- Operational and seller related issues
+The analysis focuses on three business areas:
 
-By identifying these leakage points, the project highlights where the business can improve stability and long term revenue growth.
+* Customer Retention
+* Delivery Performance
+* Operational Efficiency
+
+The objective is to identify revenue risks, quantify their impact, and prioritize the areas with the greatest potential to improve revenue stability.
 
 ## Problem Statement
 
-The business is generating consistent revenue and attracting new customers. However, there are concerns about the stability and long-term sustainability of this growth.
+The business continues to generate revenue and acquire customers, but management needs to understand whether growth is sustainable.
 
-Management wants to understand whether revenue is being affected by gaps in customer retention, delivery performance, or operational processes, and assess the overall impact on business growth.
+This analysis investigates whether customer retention challenges, delivery performance issues, or operational inefficiencies are creating risks to future revenue growth.
 
 ## Objective
 
-The objective of this analysis is to **identify where revenue is leaking** across the business, quantify the impact of each leakage area, and highlight which issues need immediate attention to stabilize and improve revenue growth.
+* Quantify key sources of revenue risk across the business.
+* Evaluate the impact of customer retention, delivery performance, and operational issues.
+* Identify areas that should be prioritized to improve revenue stability.
 
 ## Dataset Overview
 
-This analysis uses a public e-commerce dataset that captures end-to-end order activity.
+**Dataset:** Brazilian E-Commerce Public Dataset by Olist
 
-**Dataset:** [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-
-The dataset contains multiple tables representing the full order lifecycle including:
+The dataset contains end-to-end order lifecycle information across multiple tables:
 
 `customers` ▪ `location` ▪ `order_items` ▪ `payments` ▪ `reviews` ▪ `orders` ▪ `product` ▪ `seller` ▪ `product_category`
 
-> The `9 csv` files were structured into a relational **SQLite database**, enabling multi-table joins and revenue analysis using SQL queries.
+The 9 CSV files were structured into a relational SQLite database to enable multi-table analysis using SQL.
 
-## Tool and Technologies
+## Tools and Technologies
 
-`Python` ▪ `SQL` ▪ `SQLite` ▪ `Pandas` ▪ `Matplotlib` ▪ `Seaborn` ▪ `Jupyter Notebook` ▪ `Power BI`
+`Python` ▪ `SQL` ▪ `SQLite` ▪ `Pandas` ▪ `Matplotlib` ▪ `Seaborn` ▪ `Jupyter Notebook`
 
 ## Methods
 
-The analysis follows these steps:
-1. Loaded the raw `csv` files into Python.
-2. Created a relational `SQLite database` to organize the data into structured tables.
-3. Used `SQL` joins to connect customer, order, payment, review, and seller information.
-4. Validated the database structure by inspecting tables and verifying record counts.
-5. Performed data quality checks including missing value detection, duplicate record validation, and referential integrity verification across related tables.
-6. Validated financial consistency by comparing aggregated order values with recorded payment values to ensure transaction accuracy.
-7. Computed metrics related to revenue generation, delivery performance, and operational failures.
-8. Visualized selected insights using `Python` plotting libraries.
-9. Compiled the insights into a `Power BI` Dashboard for easy interpretation and review.
+1. Built a relational SQLite database from raw CSV files.
+2. Validated data quality through missing value, duplicate, and integrity checks.
+3. Performed multi-table SQL analysis across customers, orders, payments, reviews, products, and sellers.
+4. Evaluated customer retention patterns and revenue contribution.
+5. Assessed delivery performance, customer experience impact, and revenue exposure.
+6. Analyzed operational risks including order cancellations.
+7. Visualized findings using Python.
 
 ## Analysis and Key Insights
 
-### Stage 01 : Customer Behavior Leakage
+### Stage 01: Customer Retention
 
-This stage focuses on understanding how customer purchasing patterns impact revenue sustainability, especially repeat purchases.
+#### Findings
 
-**Insights:**
+* Repeat customers generated nearly `2x` higher revenue per customer than one-time buyers.
+* Increasing repeat purchase rates to `5%` could unlock approximately `₹0.58M` in additional revenue.
+* Increasing repeat purchase rates to `10%` could generate more than `₹2.0M` in additional revenue.
+* Revenue growth remains heavily dependent on acquiring new customers.
 
-- **97% of customers** are one time buyers
-- **94.4% of total revenue** worth **14.5M** comes from one time buyers
-- Average revenue per repeat customer is **nearly 2 times higher** than one time customers
+#### Recommendation
 
-> Revenue is acquisition-driven rather than retention-driven, increasing long-term dependency on continuous customer acquisition.
+* Prioritize initiatives that increase second-order conversion and repeat purchasing behavior.
 
-### Stage 02 : Experience Driven Leakage
 
-This stage evaluates how delivery delays and poor experience affect customer satisfaction and future revenue.
+### Stage 02: Delivery Performance
 
-**Insights:**
+#### Findings
 
-- **8.11% of orders** were delivered later than expected, affecting `8.32%` of customers
-- **8.76% of total revenue**, worth **1.35 million** is associated with delayed deliveries
-- Average review score drops from `4.29` for on time deliveries to `2.56` for late deliveries
+* `8.11%` of delivered orders arrived later than the promised delivery date, affecting `8.32%` of customers.
+* Delayed deliveries were associated with `₹1.35M` in revenue, representing `8.76%` of total revenue.
+* Average customer ratings declined from `4.29` to `2.57` when deliveries arrived late.
+* Nearly `50%` of delayed-delivery revenue exposure was concentrated in just `SP` and `RJ`.
 
-> Late deliveries significantly reduce review scores, indicating potential risk to future customer retention.
+#### Recommendation
 
-### Stage 03 : Operational and Seller Side Leakage
+* Prioritize logistics improvements in high-exposure states to reduce delivery-related revenue risk and improve customer experience.
 
-This stage analyzes revenue loss caused by internal operational failures and seller performance.
 
-**Insights:**
+### Stage 03: Operational Efficiency
 
-- **0.14 million** revenue is directly lost due to order cancellations
-- Only **4 sellers** consistently cause delivery delays
-- Revenue linked to poor seller performance is very small compared to total delayed delivery revenue
-- Top sellers contribute only **12.9%** of total revenue
+#### Findings
 
-> Direct revenue loss from cancellations exceeds revenue concentration risk from seller-driven delays.
+* Order cancellations resulted in approximately `₹0.14M` in direct revenue loss.
+* Cancellation rates remained below `1%` across major states.
+* No meaningful geographic concentration of cancellations was identified.
 
-## Interactive Dashboard
- 
-The dashboard summarizes key insights on revenue leakage across customer behavior, delivery performance, and operational processes.
+#### Recommendation
 
-![Dashboard Preview](dashboard/dashboard_preview.png)  
-
-[Click here to view the full multi-page PDF dashboard](https://github.com/anuragchauhan21/revenue_leakage_analysis/blob/main/dashboard/Revenue%20Leakage%20Analysis%20Dashboard.pdf)
-
-## Data-Driven Action Points
-
-- Since 94.4% of revenue comes from customers who purchase only once, the business should track how many customers place a second order and focus on increasing repeat purchases.
-- Instead of reviewing all sellers, closely monitor the 4 sellers who regularly cause delivery delays and take corrective action there.
-- Analyze why orders are being cancelled and add better checks before dispatch to prevent avoidable revenue loss.
+* Investigate order-level drivers of cancellations, including fulfillment and operational issues, rather than focusing on specific regions.
 
 ## Conclusion
 
-Revenue growth is largely driven by first-time buyers, while a measurable share of revenue is exposed to delivery delays and cancellations.
+The analysis identified customer retention and delivery performance as the primary sources of revenue risk.
 
-The analysis shows that revenue stability depends not only on sales volume but on improving retention and operational consistency.
+Revenue growth remains heavily dependent on first-time buyers, while delayed deliveries expose a meaningful share of revenue to customer experience issues and are concentrated within a small number of states.
 
-Addressing these gaps can convert unstable revenue into sustainable growth.
+In contrast, cancellation-related losses are relatively limited and do not appear to be driven by geographic concentration.
 
----
+Overall, the findings indicate that improving retention and delivery execution offers the greatest opportunity to strengthen revenue stability and support sustainable growth.
 
-Project by [**Anurag Chauhan**](https://www.linkedin.com/in/theanuragchauhan/)
+### Author
+
+[Anurag Chauhan](https://www.linkedin.com/in/theanuragchauhan/)
