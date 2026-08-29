@@ -14,6 +14,12 @@ The analysis focuses on three business areas:
 
 The objective is to identify revenue risks, quantify their impact, and prioritize the areas with the greatest potential to improve revenue stability.
 
+## Interactive Power BI Dashboard
+
+<p align="center">
+  <img src="assets/dashboard_preview.png" alt="Power BI Dashboard" width="900">
+</p>
+
 ## Problem Statement
 
 The business continues to generate revenue and acquire customers, but management needs to understand whether growth is sustainable.
