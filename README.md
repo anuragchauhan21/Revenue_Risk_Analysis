@@ -1,4 +1,4 @@
-# Revenue Risk Analysis
+# Customer Retention & Delivery Risk Analysis
 
 **Analyzing customer retention, delivery performance, and operational risks impacting revenue stability in an e-commerce business.**
 
